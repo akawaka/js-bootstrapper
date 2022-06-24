@@ -1,5 +1,5 @@
 {
-  "name": "bootstrapper",
+  "name": "@akawaka/bootstrapper",
   "version": "0.0.1",
   "description": "Bootstrapper for JavaScript project",
   "main": "index.js",
