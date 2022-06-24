@@ -10,6 +10,12 @@ npx @akawaka/bootstrapper create -m vanilla /dir/my-project
 
 ![Example](docs/example.gif)
 
+## Models
+
+- vanilla : For JavaScript without framework project
+- vue2 : For JavaScript with Vue v2 framework project (with Vue router plugin)
+- vue : For JavaScript with Vue v3 framework project (with Vue router plugin)
+
 ## Contributing
 
 See the [CONTRIBUTING](docs/CONTRIBUTING.md) file.
