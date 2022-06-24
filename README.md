@@ -8,6 +8,8 @@ Tool to create JavaScript projet from model like Vanilla, VueJs, React ...
 npx @akawaka/bootstrapper create -m vanilla /dir/my-project
 ```
 
+![Example](docs/example.gif)
+
 ## Contributing
 
 See the [CONTRIBUTING](docs/CONTRIBUTING.md) file.
