@@ -22,7 +22,7 @@ This project is open source and this is our [support rules](docs/SUPPORT.md).
 
 ## License
 
- <License ...>
+This project is licensed under MIT.
 
 ## Credits
 
