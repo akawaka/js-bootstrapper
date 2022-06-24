@@ -1,6 +1,6 @@
 {
   "name": "@akawaka/bootstrapper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Bootstrapper for JavaScript project",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "Kevin Balicot <kevin@akawaka.fr>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.2",
     "yargs": "^17.5.1"
   }
 }

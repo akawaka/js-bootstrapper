@@ -1,5 +1,6 @@
 const fs = require('fs');
-const { exec } = require('child_process')
+const { exec } = require('child_process');
+const chalk = require('chalk');
 
 module.exports = {
     async exists(folder) {
@@ -16,7 +17,7 @@ module.exports = {
 
     async copyTemplate(templateName, folder) {
         return new Promise((resolve, reject) => {
-            console.log(`Coping ${templateName} model into ${folder}`);
+            console.log(chalk.yellow(`Coping ${templateName} model into ${folder}`));
             fs.cp(`${__dirname}/../template/${templateName}`, folder, { recursive: true, force: true }, (err) => {
                 if (err) {
                     reject(err);
@@ -28,7 +29,7 @@ module.exports = {
     },
 
     exec(cmd, cwd) {
-        console.log(`${cmd} ...`);
+        console.log(chalk.blue(`> ${cmd} ...`));
 
         return new Promise((resolve, reject) => {
             exec(cmd, { cwd }, (err, stdout) => {
