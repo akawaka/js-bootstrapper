@@ -12,7 +12,7 @@
                         <div class="-mr-2 flex items-center md:hidden">
                             <button @click="showMenu = !showMenu" type="button" class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
                                 <span class="sr-only">Open main menu</span>
-                                <MenuIcon/>
+                                <MenuIcon class="h-6 w-6"/>
                             </button>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                     <div class="-mr-2">
                         <button @click="showMenu = false" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
                             <span class="sr-only">Close menu</span>
-                            <XIcon/>
+                            <XIcon class="h-6 w-6"/>
                         </button>
                     </div>
                 </div>
@@ -63,8 +63,7 @@
 </template>
 
 <script>
-import MenuIcon from "./Icons/MenuIcon.vue";
-import XIcon from "./Icons/XIcon.vue";
+import { MenuIcon, XIcon } from '@heroicons/vue/solid';
 
 export default {
     components: {

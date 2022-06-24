@@ -7,7 +7,7 @@
                         <a href="#" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
                             <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">We're hiring</span>
                             <span class="ml-4 text-sm">Visit our careers page</span>
-                            <ChevronRightIcon/>
+                            <ChevronRightIcon class="ml-2 w-5 h-5 text-gray-500"/>
                         </a>
                         <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                             <span class="block">A better way to</span>
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import ChevronRightIcon from "./Icons/ChevronRightIcon";
+import { ChevronRightIcon } from '@heroicons/vue/solid';
 
 export default {
     components: {

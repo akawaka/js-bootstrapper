@@ -12,6 +12,8 @@
   "license": "proprietary",
   "private": true,
   "devDependencies": {
+    "@headlessui/vue": "^1.6",
+    "@heroicons/vue": "^1.0",
     "@symfony/webpack-encore": "^2.1",
     "file-loader": "^6.0",
     "postcss": "^8.4",
