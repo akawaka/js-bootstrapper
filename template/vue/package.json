@@ -1,0 +1,30 @@
+{
+  "name": "vue2-project",
+  "version": "1.0.0",
+  "description": "Vanilla JS project",
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "author": "Akawaka <bonjour@akawaka.fr>",
+  "license": "proprietary",
+  "private": true,
+  "devDependencies": {
+    "@headlessui/vue": "^1.6",
+    "@heroicons/vue": "^1.0",
+    "@symfony/webpack-encore": "^2.1",
+    "file-loader": "^6.0",
+    "postcss": "^8.4",
+    "postcss-loader": "^6.0",
+    "sass": "^1.52",
+    "sass-loader": "^12.6",
+    "tailwindcss": "^3.0",
+    "vue": "^3.2",
+    "vue-loader": "^17.0",
+    "vue-router": "^4.0",
+    "vue-template-compiler": "^2.6",
+    "webpack-notifier": "^1.15"
+  }
+}
