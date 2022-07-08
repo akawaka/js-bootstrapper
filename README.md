@@ -1,3 +1,9 @@
+<header style="text-align: center;">
+<img src="docs/akawaka_logo.png" alt="Akawaka logo">
+<h1>By Akawaka</h1>
+<p>Akawaka is a web expert agency, visit <a target="_blank" href="//akawaka.fr">our website</a> for more information.</p>
+</header>
+
 # JavaScript Project Bootstrapper
 
 Tool to create JavaScript projet from model like Vanilla, VueJs, React ...
