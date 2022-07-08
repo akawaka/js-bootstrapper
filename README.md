@@ -15,6 +15,7 @@ npx @akawaka/bootstrapper create -m vanilla /dir/my-project
 - vanilla : For JavaScript without framework project
 - vue2 : For JavaScript with Vue v2 framework project (with Vue router plugin)
 - vue : For JavaScript with Vue v3 framework project (with Vue router plugin)
+- react : For JavaScript with React framework project (with React router plugin)
 
 ## Contributing
 
