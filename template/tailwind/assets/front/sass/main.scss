@@ -1,0 +1,88 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+html, body {
+    @apply scroll-smooth;
+    @apply text-base font-light font-sans text-gray-900;
+    @apply p-0 m-0;
+}
+
+h1 {
+    @apply text-2xl mb-3 font-bold;
+}
+
+a {
+    @apply text-blue-900;
+
+    &:hover {
+        @apply text-blue-500;
+    }
+}
+
+.main {
+    .main-header {
+        @apply bg-white border-b border-gray-500;
+        @apply py-4 px-8;
+
+        .main-navigation {
+            @apply flex flex-row items-center;
+
+            .main-logo {
+                @apply mr-3;
+
+                width: 40px;
+                height: 40px;
+
+                img {
+                    @apply w-full;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        @apply py-4 px-8 my-10;
+    }
+
+    .main-footer {
+        @apply py-4 px-8;
+        @apply bg-gray-900 text-white;
+
+        a {
+            @apply text-white;
+
+            &:hover {
+                @apply text-blue-500;
+            }
+        }
+    }
+}
+
+ul.horizontal-navigation {
+    @apply m-0 p-0 list-none;
+    @apply flex flex-row;
+
+    li:not(:last-child) {
+        @apply mr-4;
+    }
+}
+
+ul.vertical-navigation {
+    @apply m-0 p-0 list-none;
+    @apply flex flex-col;
+
+    li:not(:last-child) {
+        @apply mb-4;
+    }
+}
+
+.author-link:hover {
+    @apply text-orange-600;
+}
+
+.console {
+    @apply p-4 mt-3;
+    @apply bg-gray-600 text-white;
+    @apply rounded-md;
+}

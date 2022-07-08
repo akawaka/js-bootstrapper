@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const chalk = require('chalk');
 
 module.exports = {
-    async exists(folder) {
+    exists(folder) {
         return new Promise((resolve, reject) => {
             fs.access(folder, (err) => {
                 if (!err) {
@@ -15,7 +15,7 @@ module.exports = {
         });
     },
 
-    async copyTemplate(templateName, folder) {
+    copyTemplate(templateName, folder) {
         return new Promise((resolve, reject) => {
             console.log(chalk.yellow(`Coping ${templateName} model into ${folder}`));
             fs.cp(`${__dirname}/../template/${templateName}`, folder, { recursive: true, force: true }, (err) => {
@@ -38,6 +38,22 @@ module.exports = {
                 }
 
                 return resolve(stdout.trim());
+            });
+        });
+    },
+
+    execScript(scriptName, options) {
+        const scriptPath = `${__dirname}/../scripts/${scriptName}`;
+
+        return new Promise((resolve) => {
+            fs.access(scriptPath, (err) => {
+                if (err) {
+                    return resolve();
+                }
+
+                console.log(chalk.white(`Executing script ${scriptName} ...`));
+
+                resolve(require(scriptPath)(options));
             });
         });
     },

@@ -1,22 +1,28 @@
 <template>
-    <div class="relative overflow-hidden">
-        <Nav/>
-        <main>
-            <Header/>
+    <div class="main">
+        <Header/>
 
-            <!-- More main page content here... -->
+        <main class="main-content">
+            <h1>Project JavaScript - Vue 2</h1>
+            <p>Template created by <a class="author-link" href="//akawaka.fr">Akawaka</a>, a web expert agency.</p>
+
+            <p>Source code available at <a href="//github.com/akawakaweb/js-bootstrapper">akawakaweb/js-bootstrapper</a></p>
+
+            <pre class="console">npx @akawaka/bootstrapper create -m vanilla /dir/my-project</pre>
         </main>
+
+        <Footer/>
     </div>
 </template>
 
 <script>
-import Nav from "../components/Nav.vue";
-import Header from "../components/Header.vue";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default {
     components: {
-        Nav,
-        Header
+        Header,
+        Footer,
     }
 }
 </script>

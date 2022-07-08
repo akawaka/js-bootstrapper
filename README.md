@@ -5,7 +5,7 @@ Tool to create JavaScript projet from model like Vanilla, VueJs, React ...
 ## Usage
 
 ```shell
-npx @akawaka/bootstrapper create -m vanilla /dir/my-project
+npx @akawaka/bootstrapper create -m vanilla -c css /dir/my-project
 ```
 
 ![Example](docs/example.gif)
@@ -16,6 +16,12 @@ npx @akawaka/bootstrapper create -m vanilla /dir/my-project
 - vue2 : For JavaScript with Vue v2 framework project (with Vue router plugin)
 - vue : For JavaScript with Vue v3 framework project (with Vue router plugin)
 - react : For JavaScript with React framework project (with React router plugin)
+
+## CSS Framework
+
+- css : No CSS Framework
+- tailwind : Install Tailwind v3 CSS Framework
+- bootstrap : Install Bootstrap v5 CSS Framework
 
 ## Contributing
 

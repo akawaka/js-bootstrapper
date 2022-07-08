@@ -1,0 +1,80 @@
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+
+    @extend .p-0, .m-0;
+}
+
+.main {
+    .main-header {
+        @extend .bg-white, .border-bottom;
+        @extend .py-3, .px-4;
+
+        .main-navigation {
+            @extend .d-flex, .flex-row, .align-items-center;
+
+            .main-logo {
+                @extend .me-3;
+
+                width: 40px;
+                height: 40px;
+
+                img {
+                    @extend .w-100;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        @extend .py-2, .px-4;
+        @extend .my-5;
+    }
+
+    .main-footer {
+        @extend .py-5, .px-4;
+        @extend .bg-dark, .text-white;
+
+        a {
+            @extend .text-white;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+ul.horizontal-navigation {
+    @extend .m-0, .p-0, .list-unstyled;
+    @extend .d-flex, .flex-row;
+
+    li:not(:last-child) {
+        @extend .me-3;
+    }
+}
+
+ul.vertical-navigation {
+    @extend .m-0, .p-0, .list-unstyled;
+    @extend .d-flex, .flex-column;
+
+    li:not(:last-child) {
+        @extend .mb-3;
+    }
+}
+
+.author-link:hover {
+    color: $orange;
+}
+
+.console {
+    @extend .p-2, .mt-4;
+    @extend .bg-dark, .text-white;
+    @extend .rounded-3;
+}

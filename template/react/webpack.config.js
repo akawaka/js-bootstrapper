@@ -39,7 +39,7 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
     // enable PostCss support
-    .enablePostCssLoader()
+    //.enablePostCssLoader()
     // enable React support
     .enableReactPreset()
 

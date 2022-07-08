@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 DOCKER?=docker
 DOCKER_COMPOSE?=docker-compose
-EXECJS?=$(DOCKER_COMPOSE) run node
+EXECJS?=$(DOCKER_COMPOSE) run --rm node
 
 ##
 ## Project setup
